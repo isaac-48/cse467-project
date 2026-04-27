@@ -1,0 +1,99 @@
+{
+  "utility_metrics_by_feature": [
+    {
+      "feature": "age",
+      "kl_divergence": 1.3396435984351949,
+      "jensen_shannon_divergence": 0.14171856485262094,
+      "wasserstein_distance": 0.9012,
+      "chi_square_stat": 2326.025330149925,
+      "chi_square_p_value": 0.0
+    },
+    {
+      "feature": "attendance_pct",
+      "kl_divergence": 1.9116597148681833,
+      "jensen_shannon_divergence": 0.24201342192879338,
+      "wasserstein_distance": 20.69246,
+      "chi_square_stat": 4004.9376935290993,
+      "chi_square_p_value": 0.0
+    },
+    {
+      "feature": "study_hours_per_day",
+      "kl_divergence": 1.069279093101922,
+      "jensen_shannon_divergence": 0.13653062057636414,
+      "wasserstein_distance": 2.57612,
+      "chi_square_stat": 2471.973716883088,
+      "chi_square_p_value": 0.0
+    },
+    {
+      "feature": "previous_gpa",
+      "kl_divergence": 2.0008350560762205,
+      "jensen_shannon_divergence": 0.09248613976884264,
+      "wasserstein_distance": 0.413846,
+      "chi_square_stat": 1628.2997456725666,
+      "chi_square_p_value": 0.0
+    },
+    {
+      "feature": "sleep_hours",
+      "kl_divergence": 0.35408113616496606,
+      "jensen_shannon_divergence": 0.03686116679484799,
+      "wasserstein_distance": 0.28874,
+      "chi_square_stat": 604.5728635689604,
+      "chi_square_p_value": 5.469665008944079e-116
+    },
+    {
+      "feature": "social_hours_week",
+      "kl_divergence": 0.2198008591032446,
+      "jensen_shannon_divergence": 0.05676324005661393,
+      "wasserstein_distance": 1.9682,
+      "chi_square_stat": 1071.4877536445729,
+      "chi_square_p_value": 2.85657979682428e-215
+    },
+    {
+      "feature": "final_cgpa",
+      "kl_divergence": 1.525040306082293,
+      "jensen_shannon_divergence": 0.1920544030196775,
+      "wasserstein_distance": 0.6877759999999999,
+      "chi_square_stat": 3219.611117133607,
+      "chi_square_p_value": 0.0
+    }
+  ],
+  "utility_summary": {
+    "feature_metric_means": {
+      "kl_divergence": 1.2029056805474323,
+      "jensen_shannon_divergence": 0.12834679385682293,
+      "wasserstein_distance": 3.9326202857142856,
+      "chi_square_stat": 2189.5583172259744,
+      "chi_square_p_value": 7.813807155634399e-117
+    },
+    "logistic_regression_auc_real_vs_synth": 0.9468888888888889
+  },
+  "privacy_summary": {
+    "delta_presence_overlap_ratio": 0.0,
+    "k_anonymity_min_equivalence_class": 1,
+    "k_anonymity_median_equivalence_class": 11.0,
+    "k_anonymity_pct_classes_lt_5": 0.17857142857142858,
+    "identifiability_score_nn_distance_le_0_5": 0.0074,
+    "quasi_identifier_columns_used": [
+      "age",
+      "gender",
+      "major",
+      "attendance_pct"
+    ]
+  },
+  "plot_features_used": [
+    "age",
+    "study_hours_per_day",
+    "attendance_pct",
+    "previous_gpa",
+    "sleep_hours",
+    "final_cgpa"
+  ],
+  "correlation_features_used": [
+    "age",
+    "study_hours_per_day",
+    "attendance_pct",
+    "previous_gpa",
+    "sleep_hours",
+    "final_cgpa"
+  ]
+}

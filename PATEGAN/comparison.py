@@ -15,6 +15,7 @@ from sklearn.neighbors import NearestNeighbors
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
+### USAGE: /opt/homebrew/bin/python3.10 comparison.py --real_csv ../Student_data.csv --synthetic_csv ./pategan_synth_out.csv --output_plot ./pategan_comp.png --output_metrics_json ./privacy_utility.json
 
 FEATURES_FOR_PLOTS = [
     'age',

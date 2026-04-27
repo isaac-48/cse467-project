@@ -194,12 +194,12 @@ def pategan(x_train, parameters):
     # 1. Train teacher models
     teacher_models = list()
     
-    for _ in range(k):
+    for teacher_idx in range(k):
                 
       Z_mb = sample_Z(partition_data_no, z_dim)
       G_mb = sess.run(G_sample, feed_dict = {Z: Z_mb})
                 
-      temp_x = x_partition[i]
+      temp_x = x_partition[teacher_idx]
       idx = np.random.permutation(len(temp_x[:, 0]))
       X_mb = temp_x[idx[:partition_data_no], :]
                 

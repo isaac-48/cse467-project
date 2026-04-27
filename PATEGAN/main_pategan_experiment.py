@@ -14,6 +14,7 @@ main_pategan_experiment.py
 """
 
 # USAGE ::: /opt/homebrew/bin/python3.10 main_pategan_experiment.py --dataset student --input_csv ../Student_data.csv --output_csv ../pategan_synth_out.csv --generate_only --iterations 1 --epsilon 0.2 --k 5 --batch_size 64 --n_s 1 && echo '--- generated preview ---' && head -n 5 ../synthetic_students_pategan_check.csv
+# USAGE ::: /opt/homebrew/bin/python3.10 main_pategan_experiment.py --dataset student --input_csv ../Student_data.csv --output_csv ../pategan_synth_out.csv --generate_only --iterations 5 --epsilon 1 --k 10 --batch_size 64 --n_s 5 && echo '--- generated preview ---' && head -n 5 ../synthetic_students_pategan_check.csv 
 
 # Necessary packages
 from __future__ import absolute_import
