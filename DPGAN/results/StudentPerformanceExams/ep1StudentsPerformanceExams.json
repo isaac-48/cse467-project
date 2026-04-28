@@ -1,0 +1,58 @@
+{
+  "utility_metrics_by_feature": [
+    {
+      "feature": "math score",
+      "kl_divergence": 0.29447807307558604,
+      "jensen_shannon_divergence": 0.07922758705897687,
+      "wasserstein_distance": 9.818,
+      "chi_square_stat": 292.8019253639201,
+      "chi_square_p_value": 1.451867162548077e-51
+    },
+    {
+      "feature": "reading score",
+      "kl_divergence": 0.26197375998272787,
+      "jensen_shannon_divergence": 0.07050083727448266,
+      "wasserstein_distance": 8.787,
+      "chi_square_stat": 257.16242868231234,
+      "chi_square_p_value": 1.0932891513773044e-43
+    },
+    {
+      "feature": "writing score",
+      "kl_divergence": 0.28894500145735313,
+      "jensen_shannon_divergence": 0.07634291120645402,
+      "wasserstein_distance": 9.307,
+      "chi_square_stat": 283.6638906009547,
+      "chi_square_p_value": 4.398157492582947e-49
+    }
+  ],
+  "utility_summary": {
+    "feature_metric_means": {
+      "kl_divergence": 0.28179894483855567,
+      "jensen_shannon_divergence": 0.07535711184663785,
+      "wasserstein_distance": 9.304,
+      "chi_square_stat": 277.87608154906235,
+      "chi_square_p_value": 3.644311880178228e-44
+    },
+    "logistic_regression_auc_real_vs_synth": 0.6286777777777778
+  },
+  "privacy_summary": {
+    "delta_presence_overlap_ratio": 0.0,
+    "k_anonymity_min_equivalence_class": 435,
+    "k_anonymity_median_equivalence_class": 500.0,
+    "k_anonymity_pct_classes_lt_5": 0.0,
+    "identifiability_score_nn_distance_le_0_5": 0.219,
+    "quasi_identifier_columns_used": [
+      "gender"
+    ]
+  },
+  "plot_features_used": [
+    "math score",
+    "reading score",
+    "writing score"
+  ],
+  "correlation_features_used": [
+    "math score",
+    "reading score",
+    "writing score"
+  ]
+}
